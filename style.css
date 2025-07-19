@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    position: absolute;
+    z-index: -1;
+}
+.main{
+    position: relative;
+    z-index: 1;
+    border: 2px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    border-radius: 20px;
+    background-color: rgba(229, 11, 222, 0.454);
+    box-shadow:1px 1px 2px black;
+    padding: 20px;
+    margin-top: 130px;
+}
+.form:hover{
+    background-color: rgba(229, 11, 222, 0.781);
+}
+.main h1{
+    margin: 10px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 3rem;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 2px black;
+}
+ .name, .input , p , a  , .btn{
+    margin: 5px;
+    font-size: 2rem;
+}
+.input{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(137, 43, 226, 0.774);
+}
+.btn{
+    /* border: none; */
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(93, 0, 255, 0.658);
+    text-shadow: 1px 1px 1px rgb(225, 255, 0);
+    color: beige;
+    text-align: center;   
+}
+
+.main p{
+    text-align: right;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+.main p a{
+    text-decoration: none;
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+}
+.main .name{
+    font-family:monospace;
+    padding:5px;
+   
+}
+.main .input{
+    padding: 6px;
+    color: aliceblue;
+}
