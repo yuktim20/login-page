@@ -6,6 +6,14 @@
     position: absolute;
     z-index: -1;
 }
+.img img {
+    transition: transform 5s ease;
+}
+
+.img img:hover {
+    transform: scale(1.5);
+}
+
 .main{
     position: relative;
     z-index: 1;
@@ -33,7 +41,7 @@
     color: blanchedalmond;
     text-shadow: 1px 1px 2px black;
 }
- .name, .input , p , a  , .btn{
+ .input , p , a  , .btn{
     margin: 5px;
     font-size: 2rem;
 }
@@ -41,6 +49,11 @@
     border: none;
     border-radius: 5px;
     background-color: rgba(137, 43, 226, 0.774);
+}
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s;
 }
 .btn{
     /* border: none; */
@@ -51,6 +64,16 @@
     color: beige;
     text-align: center;   
 }
+.btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
 
 .main p{
     text-align: right;
@@ -67,9 +90,25 @@
 .main .name{
     font-family:monospace;
     padding:5px;
+    font-size: 1.8rem;
    
 }
 .main .input{
     padding: 6px;
     color: aliceblue;
 }
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form {
+    animation: slideIn 0.8s ease-out;
+}
+
